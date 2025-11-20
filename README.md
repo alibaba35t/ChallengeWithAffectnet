@@ -1,4 +1,4 @@
-# ChallengeWithAffectnet
+# ChallengeWithAffectnet – From Scratch Emotion Recognition
 [![Status: Training](https://img.shields.io/badge/Status-Active-green)](https://github.com/alibaba35t/ChallengeWithAffectnet)
 [![PyTorch](https://img.shields.io/badge/made_with-pytorch-EE4C2C?logo=pytorch&style=flat&logoColor=white)](#)
 ![From Scratch](https://img.shields.io/badge/Training-From%20Scratch-critical)
