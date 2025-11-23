@@ -26,9 +26,33 @@ Heyy, I am Emre. I am a Data Science student in Venice Ca' Foscari University . 
 - I learned colorJitter(in transform) and label smoothing(in CrossEntropyLoss function). I will compare final accuracies with new implementations. Maybe, I will make changes about conv2d layers.
 - I trained my saved model .(which have the lowest loss)
 
+**22-23/11/2025(accuracy: %38 -> %72) (with new model archtitecture)**  
+- I changed my model architecture so I started over evaluation process.
+- I studied layers and in new model, we have more features and **BatchNorms**.
+- I examined some pretrained models like MobileNet and it's architecture to make more accurate model. (It is may way to learn I usually research well)
+- New model is heavier than old model. For istance, in old model saved models size usually 3.2 MB but in new model, it's size over 40 MB. Accordingly, new model is slower.
+
+## Compare
+
+|   Features                            |  Old Model                             | New Model                              |
+|:--------------------------------------|:--------------------------------------:|:--------------------------------------:|
+| Features Diagram                      | 1 - 32 - 64 - 128 (output)             | 1-32-64-64-128-256-256-512 (output)    |
+| Number of Conv2d Layer                | 4                                      | 8                                      |
+| BatchNorm                             | ❌                                     | ✅                                     |
+| Label Smoothing                       | Added later                            | Default                                |
+| Highest Accuracy                      | %64                                    | %72                                    |
+| Time (one epoch to another)           | Generally 5 or 6                       | 12-13 (Sometimes 20)                   |
+
+
+
 ### Some pictures 
 
 20/11/2025
 
-
 <img width="632" height="406" alt="Screenshot from 2025-11-20 21-49-00" src="https://github.com/user-attachments/assets/77b0295f-7048-470b-a338-92ba003ca61a" />
+
+
+22-23/11/2025
+
+<img width="620" height="299" alt="Screenshot from 2025-11-22 23-10-59" src="https://github.com/user-attachments/assets/18c85c0d-d1e3-45d5-ae54-6db6c43e0011" />
+<img width="607" height="270" alt="Screenshot from 2025-11-23 14-28-10" src="https://github.com/user-attachments/assets/ff17d5d5-f879-4e17-b4e7-fef58fe71c59" />
