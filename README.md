@@ -40,7 +40,7 @@ Heyy, I am Emre. I am a Data Science student in Venice Ca' Foscari University . 
 | Number of Conv2d Layer                | 4                                      | 8                                      |
 | BatchNorm                             | ❌                                     | ✅                                     |
 | Label Smoothing                       | Added later                            | Default                                |
-| Highest Accuracy                      | %64                                    | %72                                    |
+| Highest Accuracy                      | %64                                    | **%72 (for now)**                      |
 | Time (one epoch to another)           | Generally 5 or 6                       | 12-13 (Sometimes 20)                   |
 
 
