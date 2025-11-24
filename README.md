@@ -21,6 +21,13 @@ Heyy, I am Emre. I am a Data Science student in Venice Ca' Foscari University . 
 - Honestly, it has above-average performance. However, sometimes it can behave eratically when choosing spesific emotions (like contempt and happy).
 - In addition, **environmental features** effects model's deciding process.(for instance; hair, facial hair, light, sunglasses)
 - In conclusion, accuracy not sufficient for me and I have to make some differences to improve my model.
+
+<br>
+
+## What's next?
+- New scheduler (I used **ReduceLROnPlateau** but I'll change it with ***CosineAnnealingLR***, because I have to try it new things)
+- New optimizer (In previous examples, I work with Adamax and I decided to change it with AdamW)
+- One more csv cleaning (but now, according to relFCs column)
   
 <br>
 
