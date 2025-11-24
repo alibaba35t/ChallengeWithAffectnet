@@ -14,6 +14,16 @@ Heyy, I am Emre. I am a Data Science student in Venice Ca' Foscari University . 
 - Make my model's accuracy score above %75. (I will compare with pretrained model)
 - Use this model with OpenCV and webcam. (live emotion recognition)
 
+  <br>
+
+## Testing Script Result
+- I built a basic script to test my trained model. (https://github.com/alibaba35t/ChallengeWithAffectnet/blob/main/script.py)
+- Honestly, it has above-average performance. However, sometimes it can behave eratically when choosing spesific emotions (like contempt and happy).
+- In addition, **environmental features** effects model's deciding process.(for instance; hair, facial hair, light, sunglasses)
+- In conclusion, accuracy not sufficient for me and I have to make some differences to improve my model.
+  
+<br>
+
 ## Today's Reports
 **19/11/2025(accuracy: %36 -> %58)**
 - I considered that my script(https://github.com/alibaba35t/LabelProblemSolution) made a few mistake when choose some files subset. I will handle it.
@@ -31,6 +41,8 @@ Heyy, I am Emre. I am a Data Science student in Venice Ca' Foscari University . 
 - I studied layers and in new model, we have more features and **BatchNorms**.
 - I examined some pretrained models like MobileNet and it's architecture to make more accurate model. (It is may way to learn I usually research well)
 - New model is heavier than old model. For istance, in old model saved models size usually 3.2 MB but in new model, it's size over 40 MB. Accordingly, new model is slower.
+
+  <br>
 
 ## Compare
 
