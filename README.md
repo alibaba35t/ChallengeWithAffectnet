@@ -49,11 +49,18 @@ Heyy, I am Emre. I am a Data Science student in Venice Ca' Foscari University . 
 - I examined some pretrained models like MobileNet and it's architecture to make more accurate model. (It is may way to learn I usually research well)
 - New model is heavier than old model. For istance, in old model saved models size usually 3.2 MB but in new model, it's size over 40 MB. Accordingly, new model is slower.
 
+**24/11/2025(accuracy: %52 -> %66) (with scheduler, optimizer and images which have >0.8 relFC)**  
+- I changed my scheduler (**ReduceLROnPlateau** to ***CosineAnnealingLR***) and optimizer (**Adamax** to **AdamW**).
+- In addition, I trained my model with more clear images which have only 0.8 and upper relFC score in csv. (Total image count: 28.000 -> 15.000) 
+- Initially, I am not satisfied with final results. Because, final accuracy score is %66. However, our loss was higher than 1.0 in previous tests. Today, it reduced around 0.66.  
+- The most interesting things is (***I WANT TO TAKE ATTENTION TO THIS PART***) I considered final model can decide emotions better with live webcam demo. According to my test, **Loss** is as crucial as **Accuracy**.
+- I created a new strategy: **Emotion Based Training**
+
   <br>
 
 ## Compare
 
-|   Features                            |  Old Model                             | New Model                              |
+|   Features                            |  Old Model                             | New Model                              | 
 |:--------------------------------------|:--------------------------------------:|:--------------------------------------:|
 | Features Diagram                      | 1 - 32 - 64 - 128 (output)             | 1-32-64-64-128-256-256-512 (output)    |
 | Number of Conv2d Layer                | 4                                      | 8                                      |
@@ -61,6 +68,7 @@ Heyy, I am Emre. I am a Data Science student in Venice Ca' Foscari University . 
 | Label Smoothing                       | Added later                            | Default                                |
 | Highest Accuracy                      | %64                                    | **%72 (for now)**                      |
 | Time (one epoch to another)           | Generally 5 or 6                       | 12-13 (Sometimes 20)                   |
+| Scheduler                             | ❌                                     | ReduceLROnPlateu                       |       
 
 
 
